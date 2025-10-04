@@ -1,0 +1,6 @@
+Summary
+
+The LEVIN project is a space biology knowledge engine dedicated to "Exploring the Biology of Space". Named after Gilbert V. Levin, who led NASA's Viking Labeled Release Experiment (1976), the first direct life-detection test on Mars, the project represents the courage to ask bold questions. It addresses the core challenge that decades of NASA space biology research are scattered across hundreds of publications, making finding relevant information time-consuming and insights difficult to extract for Moon and Mars exploration. 
+The solution is a multi-functional platform: it features a Centralized Knowledge Hub that unifies NASA's scattered studies ; an AI-Powered Chatbot providing concise summaries from NASA publications; and the underlying AI Agent was actively used during development to analyze data from NASA resources. Additionally, the platform provides Dashboards & Visual Tools and 3D Interactive Models for analyzing research insights. The Mobile-First Experience is designed for beginners and includes a Researchers Verify Tool (research verification) that also works with the AI Agent. 
+This comprehensive platform directly benefits scientists exploring new hypotheses, mission architects using insights for safe exploration, and managers & investors identifying research gaps.
+
