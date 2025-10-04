@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import '../screens/explore_data_page.dart';
 import '../screens/guide_page.dart';
 import '../screens/home_page.dart';
-import '../screens/missions_page.dart';
-import '../screens/research_gaps_page.dart';
-import '../screens/researchexp_page.dart';
 import '../screens/about_page.dart';
 import '../screens/verify_content_page.dart';
 
@@ -38,39 +34,6 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.rocket_launch, color: Colors.white, size: 30,),
-            title: const Text('Missions', style: TextStyle(color: Colors.white, fontSize: 20, fontFamily:'Alegreya SC' )),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MissionsPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.science, color: Colors.white, size: 32,),
-            title: const Text('Research Gaps', style: TextStyle(color: Colors.white, fontSize: 20, fontFamily:'Alegreya SC' )),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ResearchGapsPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.search , color: Colors.white, size: 28,),
-            title: const Text('Research Explorer', style: TextStyle(color: Colors.white, fontSize: 20, fontFamily:'Alegreya SC' )),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const GlossaryPage()),
-              );
-            },
-          ),
-          ListTile(
             leading: const Icon(Icons.book , color: Colors.white, size: 30,),
             title: const Text('Guides for beginners', style: TextStyle(color: Colors.white, fontSize: 20, fontFamily:'Alegreya SC' )),
             onTap: () {
@@ -83,7 +46,7 @@ class AppDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.verified_user, color: Colors.white, size: 30,),
-            title: const Text('Verify Content', style: TextStyle(color: Colors.white, fontSize: 20, fontFamily:'Alegreya SC' )),
+            title: const Text('Verify your research', style: TextStyle(color: Colors.white, fontSize: 20, fontFamily:'Alegreya SC' )),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(

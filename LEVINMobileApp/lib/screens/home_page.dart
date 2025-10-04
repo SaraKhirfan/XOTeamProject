@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:levin/screens/plant&food.dart';
+import 'package:levin/screens/verify_content_page.dart';
 import '../widgets/app_drawer.dart';
 import '../widgets/app_bar.dart';
 import 'RadiationPage.dart';
@@ -127,62 +128,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 24),
-
-              // Search Bar
-              Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  color: const Color(0xFFFFD700).withOpacity(0.5),
-                  // Gold with 50% transparency
-                  borderRadius: BorderRadius.circular(28),
-                  border: Border.all(
-                    color: const Color(0xFF7F3DB5), // Purple stroke
-                    width: 2,
-                  ),
-                ),
-                child: Row(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(left: 16),
-                      child: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                        size: 24,
-                      ),
-                    ),
-                    Expanded(
-                      child: TextField(
-                        controller: _searchController,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          fontFamily: 'Alegreya Sans SC',
-                        ),
-                        decoration: const InputDecoration(
-                          hintText: 'Discover Space Biology...',
-                          hintStyle: TextStyle(
-                            color: Colors.white70,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Alegreya Sans SC',
-                          ),
-                          border: InputBorder.none,
-                          contentPadding: EdgeInsets.symmetric(horizontal: 10,
-                              vertical: 15),
-                        ),
-                        onSubmitted: (value) {
-                          // Handle search submission
-                          _performSearch(value);
-                        },
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 32),
-
-              // Category Icons Row
               // Category Icons Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -258,14 +203,14 @@ class _HomePageState extends State<HomePage> {
 
               // Feature Cards
               _buildFeatureCard(
-                'Latest Missions and\nExperiments',
+                'Verify your research',
                 'assets/images/TheTrillionDollarOrbitalEconomy.png',
                 // You'll need to add this image
                 const Color(0xFF6B46C1),
               ),
               const SizedBox(height: 16),
               _buildFeatureCard(
-                'Research Gaps',
+                'Guides for beginners',
                 'assets/images/TheOverviewEffect.png',
                 // You'll need to add this image
                 const Color(0xFF6B46C1),
@@ -363,8 +308,7 @@ class _HomePageState extends State<HomePage> {
                     onTapCancel: () => setState(() => isPressed = false),
                     onTap: () {
                       print('$title button tapped');
-                      // Add your navigation or action here
-                      // Example: Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsPage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => VerifyContentPage()));
                     },
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 150),

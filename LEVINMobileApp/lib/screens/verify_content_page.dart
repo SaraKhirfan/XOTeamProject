@@ -243,7 +243,7 @@ class _VerifyContentPageState extends State<VerifyContentPage> {
             Icon(Icons.error_outline, color: Color(0xFFFF6B6B), size: 32),
             SizedBox(width: 12),
             Text(
-              'Content Validation Failed',
+              'Failed',
               style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'Alegreya SC',
@@ -1010,34 +1010,6 @@ class _VerifyContentPageState extends State<VerifyContentPage> {
             'Research is relatively recent',
           ),
           const SizedBox(height: 32),
-
-          // Action buttons
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton.icon(
-              onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Detailed matches coming soon!'),
-                    backgroundColor: Color(0xFF7F3DB5),
-                  ),
-                );
-              },
-              icon: const Icon(Icons.article),
-              label: const Text(
-                'Show Detailed Matches',
-                style: TextStyle(fontFamily: 'Alegreya SC'),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF7F3DB5),
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 12),
           SizedBox(
             width: double.infinity,
             child: OutlinedButton.icon(

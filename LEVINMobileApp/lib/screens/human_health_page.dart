@@ -183,45 +183,6 @@ class _HumanHealthPageState extends State<HumanHealthPage> {
                         ],
                       ),
                     ),
-
-                    const SizedBox(height: 32),
-
-                    // Quick Stats
-                    const Text(
-                      'KEY NUMBERS',
-                      style: TextStyle(
-                        color: Color(0xFFFFD700),
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Alegreya SC',
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-
-                    Row(
-                      children: [
-                        Expanded(
-                          child: _buildStatCard('1-2%', 'Bone loss\nper month', const Color(0xFFFF6B6B)),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: _buildStatCard('20%', 'Muscle loss\nwithout exercise', const Color(0xFFFFA726)),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: _buildStatCard('2.5hrs', 'Daily exercise\nneeded', const Color(0xFF66BB6A)),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: _buildStatCard('16', 'Sunrises\nper day', const Color(0xFF42A5F5)),
-                        ),
-                      ],
-                    ),
-
                     const SizedBox(height: 40),
                   ],
                 ),
