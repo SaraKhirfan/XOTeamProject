@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Enable a new era of human space exploration! NASA has been performing biology experiments in space for decades, generating a tremendous amount of information that will need to be considered as humans prepare to revisit the Moon and explore Mars. Although this knowledge is publicly available, it can be difficult for potential users to find information that pertains to their specific interests. Your challenge is to build a dynamic dashboard that leverages artificial intelligence (AI), knowledge graphs, and/or other tools to summarize a set of NASA bioscience publications and enables users to explore the impacts and results of the experiments these publications describe."
+    />
+    <meta
+      name="keywords"
+      content="NASA, space, exploration, biology, experiments, AI, knowledge graphs, dashboard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hashem,Sara,Rama,Dania" />
+    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/human.css" />
+    <link rel="stylesheet" href="../css/fadeIn.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <script defer src="../js/button.js"></script>
+    <title>Human Health In Space</title>
+  </head>
+  <body>
+  <button onclick="press()" id="ai" class="ai">AI chat</button>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/missions.html">Missions</a></li>
+            <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="../html/3DLevinLab.html">3D LAB</a></li>
+            <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+      </nav>
+      <div class="about-section">
+        <h1 style="font-family:Alegreya SC, sans-serif;" >Human Health In Space</h1>
+      </div>
+    </div>
+
+
+      <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="../html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+
+    
+
+
+    <div class="cards">
+      <div class="card">
+        <a href="#one"><h3>Blood & Circulatory System</h3></a>
+      </div>
+      <div class="card">
+        <a href="#two"><h3>Mental Health & Behavior</h3></a>
+      </div>
+      <div class="card">
+        <a href="#three"><h3>Microbiome (Gut & Skin)</h3></a>
+      </div>
+      <div class="card">
+        <a href="#four"><h3>Reproductive & Endocrine</h3></a>
+      </div>
+      <div class="card">
+        <a href="#five"><h3>Future Opportunities</h3></a>
+      </div>
+    </div>
+
+    <div class="space-container  ">
+      <h1>THE HUMAN BODY IN SPACE</h1>
+      <p>CLICK ON A BODY PART TO SEE HOW SPACE AFFECTS IT</p>
+
+      <div class="body-diagram fade-in">
+        <img src="../images/body.png" alt="Human Body Diagram" />
+        <a
+          id="brain"
+          class="hotspot"
+          onclick="showInfo('Brain', 'Heres the information summarized into a normal paragraph:Exposure to microgravity during spaceflight has both negative effects and research opportunities concerning the human brain and vision  primary concern is that fluid shifts cause more cerebrospinal fluid and blood to pool in the head, potentially increasing intracranial pressure (ICP). This is strongly linked to Spaceflight-Associated Neuro-Ocular Syndrome (SANS), which affects about 70% of long-duration mission astronauts, leading to significant changes like optic disc swelling, eyeball flattening, retinal folds, and vision changes. Furthermore, studies point to potential structural brain changes, neuroinflammation, and altered fluid/pressure dynamics in the brain. On the positive side, the brains plasticity may allow it to reorganize and adapt to these unique conditions. Studying these effects can lead to a deeper understanding of neural recovery, intracranial pressure disorders, and vision issues here on Earth.')"
+          >BRAIN</a
+        >
+        <a
+          id="vision"
+          class="hotspot"
+          onclick="showInfo('Vision', 'Negative Effects (SANS) The defining negative effect is the development of SANS, which impacts many astronauts. This condition is primarily driven by fluid shifts in microgravity, which increase intracranial pressure (ICP), thereby compressing the back of the eye. Key symptoms of SANS include optic disc swelling (papilledema), globe flattening (a change in the shape of the eyeball), and the formation of choroidal folds in the retina. For some astronauts, this leads to persistent problems such as blurred vision and farsightedness.Positive Effects and OpportunitiesThe study of SANS provides significant opportunities for terrestrial medicine. SANS serves as a unique model for understanding and treating intracranial pressure disorders on Earth, such as idiopathic intracranial hypertension (IIH). Furthermore, the necessity of protecting astronauts from SANS drives the development of countermeasures, including specialized devices like lower-body negative pressure (LBNP) suits and customized goggles. Research into SANS also offers new insights into the crucial connection between vascular health and overall eye function.')"
+          >VISION</a
+        >
+        <a
+          id="heart"
+          class="hotspot"
+          onclick="showInfo('Heart', 'The primary negative effect involves a major upward fluid shift, which increases pressure in the chest and head while reducing fluid in the lower body. This fluid shift can cause the heart shape to shift from oval to more spherical due to altered loading and reduced vascular support. Over time, astronauts experience cardiovascular deconditioning, characterized by reductions in blood volume, vascular tone, and cardiac output. A common issue upon returning to Earth is orthostatic intolerance (OI), which is the difficulty in maintaining adequate blood pressure when standing upright.However, these challenges provide valuable opportunities. Astronauts employ onboard exercise regimes (both resistive and aerobic) to effectively help maintain their cardiovascular fitness during missions. Crucially, studying these rapid cardiovascular changes in space can offer unique insights into accelerated aging and the progression of cardiovascular disease on Earth, potentially benefiting preventative medicine and treatment strategies.')"
+          >HEART</a
+        >
+        <a
+          id="skin"
+          class="hotspot"
+          onclick="showInfo('Skin', 'Negative Effects on Skin Health In space, the skin tends to become thinner, drier, and itchy, increasing the risk of rashes and irritation. A significant concern is that wound healing slows down in microgravity, which could complicate medical responses. Furthermore, the increased exposure to space radiation accelerates skin aging and elevates the risk of skin cancer. Positive Effects and Research Opportunities Studying these changes provides a valuable model for accelerated skin aging, offering insights that could lead to new dermatological treatments. The unique environment also supports the development of improved wound healing therapies and advances in regenerative medicine. Research into the skins microbiome and hydration in space, particularly via platforms like NASA GeneLab, can offer unique insights. Finally, understanding the radiation effects is crucial for advancing radiation shielding strategies both for long-duration space missions and certain applications on Earth.')"
+          >SKIN</a
+        >
+        <a
+          id="bones"
+          class="hotspot"
+          onclick="showInfo('Bones', 'Negative Effects on Bone  Astronauts experience substantial bone density loss, typically 1–2% per month in weight-bearing bones like the hips and spine, due to the lack of mechanical loading. This rapid loss increases the amount of calcium excreted in the urine, which in turn elevates the risk of developing kidney stones. Positive Effects and Opportunities The challenge of bone loss in space has driven important developments. The use of specialized resistive exercise devices (ARED) on the International Space Station (ISS) has proven highly effective in significantly reducing this bone loss. Crucially, the studies on accelerated bone deterioration and effective countermeasures in space provide new insights into osteoporosis prevention and treatment for the general population on Earth.')"
+          >BONES</a
+        >
+        <a
+          id="muscles"
+          class="hotspot"
+          onclick="showInfo('Muscles', 'Negative Effects on Muscles  In the absence of gravity loading, astronauts experience significant muscle atrophy, characterized by a loss of muscle mass and strength, particularly in postural muscles of the legs and back. This includes a reduction in muscle fiber size and a decrease in overall endurance capacity over the course of a mission. Upon returning to Earth, the sudden readaptation of muscles and the neuromuscular system often results in temporary coordination and balance issues. Positive Effects and Opportunities To counter these effects, effective exercise countermeasures are utilized, such as resistance devices (ARED), treadmills, and cycling, which are crucial for preserving muscle mass and performance. More broadly, spaceflight provides a unique and powerful model for studying muscle wasting disorders on Earth, including conditions like sarcopenia (age-related muscle loss) and muscular dystrophy. The insights gained from microgravity research are directly applicable to developing better rehabilitation techniques for immobilized or bedridden patients.')"
+          >MUSCLES</a
+        >
+      </div>
+    </div>
+
+    <div id="infoModal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+      </div>
+    </div>
+    <section>
+      <h1 id="one">Blood & Circulatory System</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="section">
+        <p>
+          In space, the circulatory system undergoes major adaptations due to
+          microgravity (NASA Cardiovascular Health in Microgravity). Body fluids
+          shift from the legs toward the head and chest (Station Science 101:
+          Cardiovascular Research), leading to reduced overall blood volume
+          (NASA Cardiovascular Health), facial puffiness, and “bird legs.” Over
+          time, the heart remodels—losing muscle mass and changing shape—while
+          arteries may stiffen and vascular regulation weakens (Station Science
+          101; PMC Review on Cardiovascular System in Space). These changes
+          reduce the body’s ability to maintain blood pressure, often causing
+          dizziness or fainting when astronauts return to Earth (NASA
+          Cardiovascular Health). NASA studies like Vascular Echo, Fluid Shifts,
+          and engineered heart tissue experiments on the ISS help track these
+          effects and develop countermeasures to protect cardiovascular health
+          during long-duration missions (Station Science 101).
+        </p>
+      </div>
+    </section>
+    <section>
+      <h1 id="two">Mental health & behavior</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      <div class="section">
+        <p>
+          In space, astronauts face isolation, confinement, disrupted sleep
+          cycles, and distance from Earth, which can lead to anxiety,
+          depression, cognitive decline, emotional dysregulation, and mood
+          swings. NASA+4NASA+4NASA+4 Support is offered via tele-psychology,
+          journaling, periodic check-ins, VR relaxation tools, and crew care
+          measures, but in deep space missions the delay in communication will
+          make autonomous psychological support essential. NASA+4NASA+4NASA+4
+          NASA’s Behavioral Health & Performance (BHP) program works to develop
+          prevention, intervention, and monitoring strategies for long missions.
+          NASA+5NASA+5
+        </p>
+      </div>
+    </section>
+    <section>
+      <h1 id="three">Microbiome (Gut & Skin)</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      <div class="section">
+        <p>
+          Astronaut microbiome studies via NASA’s Open Science Data Repository
+          show that spaceflight and long-duration confinement led to shifts in
+          gut microbial communities, including reductions in beneficial species
+          that degrade resistant starch and suppress inflammation (e.g.
+          Faecalibacterium prausnitzii, Ruminococcus bromii). NASA Salivary
+          (oral / upper gut) microbiome alterations are also tracked in
+          experiments like OSD-280, monitoring changes before, during, and after
+          flight. NASA Science On the environmental side, microbial surveys of
+          spacecraft surfaces (e.g. OSD-65) help map how the built environment’s
+          microbiome interacts with and potentially influences crew skin or
+          habitat microbiomes. NASA Science
+        </p>
+      </div>
+    </section>
+    <section>
+      <h1 id="four">Reproductive & Endocrine</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      <div class="section">
+        <p>
+          reproductive health data in space is very limited. The Female
+          Reproductive System Analysis Working Group notes the lack of direct
+          human spaceflight data but emphasizes the importance of monitoring
+          ovarian and endocrine changes for long-duration missions
+          (nasa.gov/osdr) On the endocrine side, archived spaceflight studies in
+          OSDR show that hormonal regulation is altered in astronauts, including
+          shifts in stress hormones, fluid balance regulators, and metabolic
+          hormones, which can affect cardiovascular stability, bone health, and
+          immunity (nasa.gov/osdr) endocrine monitoring and ground-based analog
+          is research essential to safeguard astronaut health and overcome the
+          gap of knowledge of these systems(public.ksc.nasa.gov/nslsl
+        </p>
+      </div>
+    </section>
+    <section>
+      <h1 id="five">Future Opportunities</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      <div class="section">
+        <p>
+          Future Opportunities refer to the possibilities and prospects that may
+          emerge over time as a result of technological advancements, economic
+          shifts, and social transformations. Exploring these opportunities
+          helps individuals and organizations prepare for upcoming changes,
+          align their efforts with promising fields such as artificial
+          intelligence, renewable energy, digital education, and innovations in
+          health and the environment. Thinking about future opportunities is not
+          only about predicting what might happen, but also about being ready to
+          adapt, developing the right skills, and seizing the right moment to
+          grow and succeed.
+        </p>
+      </div>
+    </section>
+  <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+          A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/missions.html">Missions</a></li>
+          <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+        <ul>
+          <li><a href="../html/human.html">Humans in Space</a></li>
+          <li><a href="../html/plantsFood.html">Plants in Space</a></li>
+          <li><a href="../html/microbes.html">Microbes in Space</a></li>
+          <li><a href="../html/radiation.html">Radiation Biology</a></li>
+          <li><a href="../html/cells.html">Cells & Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+    <script src="../js/human.js">
+    </script>
+    <script src="../js/fadeIn.js"></script>
+  </body>
+</html>

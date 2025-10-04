@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cells.css" />
+    <link rel="stylesheet" href="../css/button.css">
+ 
+    <title>cells</title>
+  </head>
+  <body>
+    <button onclick="press()" id="ai" class="ai">AI chat</button>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/missions.html">Missions</a></li>
+            <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="../html/3DLevinLab.html">3D LAB</a></li>
+            <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+      </nav>
+
+      <div class="title">
+        <h1 style="font-family:Alegreya SC, sans-serif;" >CELLS & MOLECULES</h1>
+        <h2>In Space</h2>
+      </div>
+    </div>
+        <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="../html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+    <div class="cell-content">
+      <div class="cards">
+        <div class="card"><a href="#1">Why Study Cells in Space?</a></div>
+        <div class="card">
+          <a href="#2">Cell growth & Morphology In Microgravity</a>
+        </div>
+        <div class="card">
+          <a href="#3">Gene Expression & Molecular Pathways</a>
+        </div>
+        <div class="card"><a href="#4">Dna Damage & Repair in Space</a></div>
+        <div class="card">
+          <a href="#5">Protien Folding & Cellular Stress</a>
+        </div>
+        <div class="card">
+          <a href="#6">Application & Opportunities </a>
+        </div>
+
+      </div>
+
+      <h1 id="1" class="subheader">Why Study Cells in Space</h1>
+
+      <div class="radiationInfoBox">
+
+        <div class="section">
+          <p>
+            Cells are the fundamental building blocks of life. Studying how they
+            respond to spaceflight conditions helps scientists predict how whole
+            organisms—humans, plants, and microbes—adapt to microgravity and
+            radiation.
+          </p>
+        </div>
+
+        <model-viewer
+              src="../models/human_cell.glb"
+              alt="human cell"
+              auto-rotate
+              camera-controls
+              background-color="#000000"
+            >
+            </model-viewer>
+
+        <div class="section">
+          <h3 class="subtitle">
+            In space, two primary factors influence cellular behavior:
+          </h3>
+          <ul>
+            <li>
+              Microgravity: Alters cell shape, growth orientation, and signaling
+              pathways.
+            </li>
+            <li>
+              Radiation: Damages DNA, affects protein function, and triggers
+              stress responses.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3 class="subtitle">Understanding these effects is critical for:</h3>
+          <ul>
+            <li>Protecting astronaut health during long-duration missions.</li>
+            <li>
+              Advancing biomedical research on Earth, offering insights into
+              diseases like cancer, immune dysfunction, and muscle atrophy
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bulletPoints">
+      <div id="2" class="infoContainer">
+        <div class="subheader">Cell growth & Morphology In Microgravity</div>
+        <div class="infoBox">
+          <p>
+            Microgravity significantly alters cellular morphology, causing many
+            adherent cell types to lose their normal flattened shape and
+            reorganize their internal cytoskeleton. Crucially, this unique
+            environment promotes the self-assembly of cells into
+            three-dimensional (3D) spheroids that structurally and functionally
+            mimic native tissues and tumors far better than conventional
+            Earth-based cultures. This finding is leveraged by researchers to
+            develop sophisticated 3D tissue models for studying disease
+            progression and evaluating pharmaceutical compounds.
+          </p>
+             <div class="model">
+        
+          <div class="viewerContent">
+            <model-viewer
+              src="../models/eukaryotic_cell_cross_section.glb"
+              alt="human cell"
+              auto-rotate
+              camera-controls
+              background-color="#000000"
+              class="cardModel"
+            >
+            </model-viewer>
+            <div class="comment">ex. animal cell with sphereical shape due to microgravity</div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+      <div id="3" class="infoContainer">
+        <div class="subheader">Gene Expression & Molecular Pathways</div>
+        <div class="infoBox">
+          <p>
+            The exposure to microgravity acts as a profound environmental
+            stressor, initiating rapid and widespread changes at the molecular
+            level, primarily through altered gene expression. Studies frequently
+            observe the differential regulation of thousands of genes across
+            various cell types, impacting pathways related to signal
+            transduction, metabolism, and cell cycle control. Characterizing
+            these molecular pathways is essential, as the data reveals
+            fundamental biological mechanisms that are normally masked by the
+            constant force of Earth's gravity.
+          </p>
+          <div class="model">
+        
+          <div class="viewerContent">
+            <model-viewer
+              src="../models/regulation_of_gene_expression.glb"
+              alt="human cell"
+              auto-rotate
+              camera-controls
+              background-color="#000000"
+              class="cardModel"
+            >
+            </model-viewer>
+
+            <div class="comment">ex. normal regulation of gene expression</div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="4" class="infoContainer">
+        <div class="subheader">Dna Damage & Repair in Space</div>
+        <div class="infoBox">
+          <p>
+            Cells in space are subject to the compounding stressors of
+            microgravity and heightened exposure to ionizing space radiation,
+            particularly from galactic cosmic rays. This environment increases
+            the risk of DNA damage and chromosomal aberrations in human cells,
+            which is a major concern for long-duration missions. Consequently,
+            research focuses on how microgravity itself may impair DNA repair
+            mechanisms and alter the expression of genes involved in genome
+            maintenance and apoptosis, striving to identify targets for
+            protective countermeasures.
+          </p>
+          <div class="model">
+        
+          <div class="viewerContent">
+            <model-viewer
+              src="../models/human_dna.glb"
+              alt="human cell"
+              auto-rotate
+              camera-controls
+              background-color="#000000"
+              class="cardModel"
+            >
+            </model-viewer>
+
+          <div class="comment">ex. a normal healthy human dna in Earth Gravity</div>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="5" class="infoContainer">
+        <div class="subheader">Protien Folding & Cellular Stress</div>
+        <div class="infoBox">
+          <p>
+            The immune system is highly sensitive to the space environment,
+            displaying pronounced dysfunction known as spaceflight-associated
+            immune dysregulation. Molecularly, this is characterized by the
+            inhibition of key immune cell functions, such as the proliferation
+            and activation of T-lymphocytes, and the downregulation of pivotal
+            signaling pathways required for robust antiviral and antibacterial
+            defenses. These changes contribute to an increased susceptibility to
+            infection and the reactivation of latent viruses in astronauts.
+          </p>
+
+<div class="viewerContent">
+    <model-viewer
+      src="../models/glucagon_receptor.glb"
+      alt="human cell"
+      auto-rotate
+      camera-controls
+      background-color="#000000"
+      class="cardModel"
+    >
+    </model-viewer>
+    <div class="comment">ex. a Healthy glucagon receptor under earth-gravity</div>
+  </div>
+
+        </div>
+      </div>
+
+      <div id="6" class="infoContainer">
+        <div class="subheader">Application & Opportunities</div>
+        <div class="infoBox">
+          <p>
+            Research into cellular and molecular biology in space is not just
+            for human spaceflight; it has massive translational opportunities
+            for Earth. By growing cells in microgravity, scientists gain a
+            unique vantage point to study diseases that involve
+            gravity-sensitive processes, such as osteoporosis, muscle atrophy,
+            and cancer metastasis. Discoveries on how cells adapt to space,
+            supported by open-science data repositories, directly contribute to
+            developing new drugs, vaccines, and advanced regenerative medicine
+            techniques.
+          </p>
+          <div class="model">
+        
+        </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+          A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/missions.html">Missions</a></li>
+          <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+        <ul>
+          <li><a href="../html/human.html">Humans in Space</a></li>
+          <li><a href="../html/plantsFood.html">Plants in Space</a></li>
+          <li><a href="../html/microbes.html">Microbes in Space</a></li>
+          <li><a href="../html/radiation.html">Radiation Biology</a></li>
+          <li><a href="../html/cells.html">Cells & Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+       <script src="../js/button.js"></script>
+  </body>
+</html>

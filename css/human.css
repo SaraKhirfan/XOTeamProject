@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-style: normal;
+
+}
+body {
+
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/back4.jpg');
+    background-size: cover;
+    background-position: center;
+ 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    width: 100%;
+  
+}
+
+.logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a,
+.nav-links span {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s;
+    z-index: 2;
+}
+.about-section h1{
+    color: white;
+    width: 45%;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cards{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+   background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    margin-top: 30px;
+    background: white;
+    border:  10px solid #FFD700;
+    border-radius: 48px;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+ .space-container {
+            width: 100%;
+           margin-left: auto;
+           margin-right: auto;
+            text-align: left;
+            padding: 30px;
+         
+        background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+       
+        }
+
+        .space-container h1 {
+          color: #fff;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .space-container p {
+            font-size: 1.2em;
+            color: #cccccc;
+            margin-bottom: 40px;
+        }
+
+        /* Body diagram container */
+        .body-diagram {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .body-diagram img {
+            width: 100%;
+          
+        
+            display: block;
+        }
+
+        /* Hotspots styling */
+        .hotspot {
+            position: absolute;
+            background-color: #8A2BE2;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+      
+        /* Hotspots positioning */
+        #brain { top: 1%; left: 60%; }
+        #vision { top: 10%; right: 65%; }
+        #heart { top: 20%; left: 70%; }
+        #skin { top: 45%; left: 75%; }
+        #bones { bottom: 25%; right: 65%; }
+        #muscles { bottom: 15%; left: 65%; }
+
+
+        /* --- CSS الجديد الخاص بالـ Modal --- */
+
+        /* 1. خلفية شبه شفافة تغطي الشاشة كلها */
+        .modal-overlay {
+            position: fixed; /* يبقى ثابتًا حتى مع تحريك الصفحة */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* لون أسود مع شفافية */
+            display: none; /* يكون مخفيًا في البداية */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* لضمان ظهوره فوق كل العناصر الأخرى */
+            opacity: 0; /* يبدأ بشفافية كاملة */
+            transition: opacity 0.3s ease; /* تأثير ظهور ناعم */
+        }
+
+        /* 2. صندوق الـ Modal نفسه */
+        .modal-content {
+           background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 500px;
+            text-align: left;
+            position: relative;
+            transform: translateY(-50px); /* يبدأ من الأعلى قليلاً */
+            transition: transform 0.3s ease; /* تأثير حركة ناعم */
+        }
+
+        .modal-content h2 {
+          font-size: 30px;
+            margin-top: 0;
+            color: #FFD700; /* لون بنفسجي مميز للعنوان */
+        }
+
+        .modal-content p {
+          font-size: 20px;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* 3. زر الإغلاق (X) */
+        .close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-button:hover {
+            color: #fff;
+        }
+
+        /* 4. كلاس للتحكم بظهور الـ Modal */
+        .modal-overlay.show {
+            display: flex; /* يجعله يظهر */
+            opacity: 1; /* يزيل الشفافية */
+        }
+
+        .modal-overlay.show .modal-content {
+            transform: translateY(0); /* يعيد الصندوق لمكانه الطبيعي */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  
+    background-image: url('../images/back.png');
+    background-size: cover;
+    /* لضمان تغطية الصورة كامل المساحة */
+    background-position: center;
+    /* لتركيز الصورة في المنتصف */
+    color: #ffffff;
+    /* لون النص في الفوتر */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* للسماح للعناصر بالنزول لسطر جديد على الشاشات الصغيرة */
+    justify-content: space-around;
+    /* توزيع العناصر بالتساوي */
+    align-items: flex-start;
+    /* محاذاة العناصر للأعلى */
+    gap: 30px;
+    /* مسافة بين الأعمدة */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* خط فاصل خفيف */
+    box-sizing: border-box;
+   
+}
+footer .footer-section p{
+    font-size: 20px;
+}
+.footer-section {
+    flex: 1;
+    /* لجعل الأعمدة تتوزع بالتساوي */
+    min-width: 200px;
+    /* أقل عرض ممكن للعمود قبل ما ينزل لسطر جديد */
+    margin: 0 15px;
+    /* مسافة جانبية بين الأقسام */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 300px;
+    /* حجم اللوجو */
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    /* عشان اللوجو الأسود يصير أبيض */
+}
+
+.footer-logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.footer-logo-text p {
+    margin: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* خط تحت العنوان */
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+section{
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+color: white;
+background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+}
+section h1{
+    font-size: 50px;
+}
+section p{
+    font-size: 20px;
+}
+section .section{
+    margin-top: 20px;
+width: 80%;
+background-color: white;
+height: auto;
+padding: 20px;
+margin-left: auto;
+border-radius: 20px;
+color: black;
+
+margin-right: auto;
+}
+section .section p{
+    font-size: 25px
+}
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+  h1,h2,h3{
+    font-family: "Alegreya SC", sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color:#0A063B;
+  }
+
+  .iframe-section {
+    position: fixed;
+    display: none;
+    top: 100px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    z-index: 1000;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .iframe-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

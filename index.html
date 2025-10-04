@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Enable a new era of human space exploration! NASA has been performing biology experiments in space for decades, generating a tremendous amount of information that will need to be considered as humans prepare to revisit the Moon and explore Mars. Although this knowledge is publicly available, it can be difficult for potential users to find information that pertains to their specific interests. Your challenge is to build a dynamic dashboard that leverages artificial intelligence (AI), knowledge graphs, and/or other tools to summarize a set of NASA bioscience publications and enables users to explore the impacts and results of the experiments these publications describe."
+    />
+    <meta
+      name="keywords"
+      content="NASA, space, exploration, biology, experiments, AI, knowledge graphs, dashboard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hashem,Sara,Rama,magd" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/fadeIn.css" />
+    <title>LEVIN</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="partOne">
+        <video muted autoplay loop src="images/Untitln.mp4"></video>
+      </div>
+      <div class="partTWO">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/missions.html">Missions</a></li>
+            <li><a href="html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="html/3DLevinLab.html">3D Lab</a></li>
+            <li><a href="html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="html/about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+          <div class="left">
+            <h1>
+              Discover
+              <span style="color: #a9d1ea"> How Life Thrives</span> Beyond
+              <span style="color: #ffd700">Earth</span>
+            </h1>
+            <p>
+              Explore missions, experiments, and biological insights from space
+              research.
+            </p>
+            <div class="btnButtons">
+              <button>
+                <a href="#data" style="color: white; text-decoration: none"
+                  >Explore Data</a
+                >
+              </button>
+              <button id="chatbotBtn">AI Chatbot</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/bi.png" alt="Space Image" />
+        </div>
+      </div>
+    </div>
+    <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+    <div id="data" class="exploreData">
+      <h2>Explore Data</h2>
+      <div class="cards fade-in">
+        <a style="text-decoration: none; color: black" href="html/human.html">
+          <div class="card">
+            <img src="images/1.png" alt="" />
+            <h3>Human Health</h3>
+          </div>
+        </a>
+        <a
+          style="text-decoration: none; color: black"
+          href="html/plantsFood.html"
+        >
+          <div class="card">
+            <img src="images/2.png" alt="" />
+            <h3>Plants & Food</h3>
+          </div>
+        </a>
+        <a
+          style="text-decoration: none; color: black"
+          href="html/microbes.html"
+        >
+          <div class="card">
+            <img src="images/3.png" alt="" />
+            <h3>Microbes In Space</h3>
+          </div>
+        </a>
+        <a
+          style="text-decoration: none; color: black"
+          href="html/radiation.html"
+        >
+          <div class="card">
+            <img src="images/4.png" alt="" />
+            <h3>Radiation effective</h3>
+          </div>
+        </a>
+        <a style="text-decoration: none; color: black" href="html/cells.html">
+          <div class="card">
+            <img src="images/5.png" alt="" />
+            <h3>Cells & Molecular</h3>
+          </div>
+        </a>
+      </div>
+      <div class="about">
+        <img class="fade-in" src="images/circle.jpg" alt="" />
+        <div  class="text fade-in">
+          <h2>About LEVIN</h2>
+          <img src="images/logo.png" alt="" />
+          <p>
+            LEVIN is named in tribute to Dr. Gilbert V. Levin, a pioneering
+            scientist in space biology whose experiments on NASA’s Viking
+            missions in 1976 provided the first direct tests for life on Mars.
+            Levin’s groundbreaking “Labeled Release” experiment reported results
+            consistent with microbial activity, sparking decades of debate and
+            inspiring future astrobiology missions. The name also honors the
+            Martian crater Levin, a symbol of exploration and discovery on
+            another world. Our logo reflects this connection, representing Mars
+            and its landscapes, and stands as a reminder of our mission:
+            exploring the biology of space.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="latest">
+      <h1>Latest Missions and Experiments</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="last">
+        <div class="card-container fade-in">
+          <img
+            src="images/11.jpg"
+            alt="An astronaut looking at Earth from space"
+            class="main-image"
+          />
+          <div class="header-info">
+            <p class="category">Philosophy</p>
+            <p class="read-time">12 min read</p>
+          </div>
+          <h2 class="title">The Overview Effect: Transforming Consciousness</h2>
+          <p class="description">
+            Former astronaut Dr. Elena Vasquez explores how viewing Earth from
+            space fundamentally alters human perception and values.
+          </p>
+          <div class="author-info">
+            <img
+              src="images/elena.jpg"
+              alt="Dr. Elena Vasquez"
+              class="author-image"
+            />
+            <div class="author-details">
+              <h3 class="author-name">Dr. Elena Vasquez</h3>
+              <p class="author-title">Former ISS Commander</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container fade-in">
+          <img
+            src="images/22.jpg"
+            alt="An astronaut looking at Earth from space"
+            class="main-image"
+          />
+          <div class="header-info">
+            <p class="category">Philosophy</p>
+            <p class="read-time">12 min read</p>
+          </div>
+          <h2 class="title">The Overview Effect: Transforming Consciousness</h2>
+          <p class="description">
+            Former astronaut Dr. Elena Vasquez explores how viewing Earth from
+            space fundamentally alters human perception and values.
+          </p>
+          <div class="author-info">
+            <img
+              src="images/Hiroshi.jpg"
+              alt="Dr. Elena Vasquez"
+              class="author-image"
+            />
+            <div class="author-details">
+              <h3 class="author-name">Dr. Elena Vasquez</h3>
+              <p class="author-title">Former ISS Commander</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container fade-in">
+          <img
+            src="images/33.jpg"
+            alt="An astronaut looking at Earth from space"
+            class="main-image"
+          />
+          <div class="header-info">
+            <p class="category">Philosophy</p>
+            <p class="read-time">12 min read</p>
+          </div>
+          <h2 class="title">The Overview Effect: Transforming Consciousness</h2>
+          <p class="description">
+            Former astronaut Dr. Elena Vasquez explores how viewing Earth from
+            space fundamentally alters human perception and values.
+          </p>
+          <div class="author-info">
+            <img
+              src="images/Aisha.jpg"
+              alt="Dr. Elena Vasquez"
+              class="author-image"
+            />
+            <div class="author-details">
+              <h3 class="author-name">Dr. Elena Vasquez</h3>
+              <p class="author-title">Former ISS Commander</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overview">
+      <h1>Data Overview</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="dataOver">
+        <div class="data1">
+          <div class="header">
+            <h1>SNAPSHOT</h1>
+            <p>SPACE BIOLOGY RESEARCH FOCUS</p>
+          </div>
+          <div class="content-wrapper">
+            <div class="pie-chart-container">
+              <div class="pie-slice slice-human"></div>
+              <div class="pie-slice slice-plant"></div>
+              <div class="pie-slice slice-microbes"></div>
+              <div class="pie-slice slice-cells"></div>
+            </div>
+            <div class="legend">
+              <div class="legend-item human">
+                <span class="percentage">45%</span> Human
+              </div>
+              <div class="legend-item plant">
+                <span class="percentage">35%</span> Plant
+              </div>
+              <div class="legend-item microbes">
+                <span class="percentage">15%</span> Microbes
+              </div>
+              <div class="legend-item cells">
+                <span class="percentage">5%</span> Cells
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data2 fade-in">
+          <h1>Research Explorer</h1>
+          <p>
+            A Research Explorer in Biology is a platform or tool designed to
+            help scientists, students, and enthusiasts navigate, access, and
+            analyze a vast range of biological research data. It aggregates
+            publications, experimental results, and datasets from various
+            sources, allowing users to explore topics such as genetics,
+            microbiology, physiology, ecology, and more. Advanced features may
+            include search filters, data visualization, AI-assisted summaries,
+            and interactive dashboards that help users
+          </p>
+          <button type="button">
+            <a
+              style="color: white; text-decoration: none"
+              href="html/ResearchExplorer.html"
+              >Explore
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="content-box">
+      <div class="cards-container1 fade-in">
+        <h2>RESEARCH GAPS & OPPORTUNITIES IN SPACE BIOLOGY</h2>
+        <div class="cards-container">
+          <div class="card1">
+            <div class="icon-container">
+              <img src="images/v1.png" alt="Plant icon" />
+            </div>
+            <h3>PLANT GROWTH IN LUNAR/MARTIAN GRAVITY</h3>
+            <p>
+              Most experiments focus on microgravity, limited data on partial
+              gravity environments.
+            </p>
+            <p>
+              <strong>OPPORTUNITY:</strong> Develop crop systems adaptable to
+              Mars habitats.
+            </p>
+            <button>
+              <a
+                style="color: white; text-decoration: none"
+                href="html/ResearchGaps.html"
+                >Research</a
+              >
+            </button>
+          </div>
+          <div class="card1" id="middle-card">
+            <div class="icon-container">
+              <img src="images/v2.png" alt="DNA icon" />
+            </div>
+            <h3>GENETIC EXPRESSION OVER LONG MISSIONS</h3>
+            <p>
+              Short-term studies exist, but limited data on missions >1 year.
+            </p>
+            <p>
+              <strong>OPPORTUNITY:</strong> Study DNA repair mechanisms for
+              future Mars colonization.
+            </p>
+            <button>
+              <a
+                style="color: white; text-decoration: none"
+                href="html/ResearchGaps.html"
+                >Research</a
+              >
+            </button>
+          </div>
+          <div class="card1">
+            <div class="icon-container">
+              <img src="images/v3.png" alt="Radiation icon" />
+            </div>
+            <h3>COMBINED RADIATION & MICROGRAVITY EFFECTS</h3>
+            <p>Most studies isolate variables; few test combined stressors.</p>
+            <p>
+              <strong>OPPORTUNITY:</strong> Design integrated countermeasure
+              experiments.
+            </p>
+            <button>
+              <a
+                style="color: white; text-decoration: none"
+                href="html/ResearchGaps.html"
+                >Research</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="final">
+      <h1>Follow the journey of Space Biology !</h1>
+      <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="divf">
+        <main id="timeline-wrapper"></main>
+        <a href="html/missions.html"
+          ><button id="createTimelineBtn">Replay</button></a
+        >
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+          A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/missions.html">Missions</a></li>
+          <li><a href="html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+        <ul>
+          <li><a href="html/human.html">Humans in Space</a></li>
+          <li><a href="html/plantsFood.html">Plants in Space</a></li>
+          <li><a href="html/microbes.html">Microbes in Space</a></li>
+          <li><a href="html/radiation.html">Radiation Biology</a></li>
+          <li><a href="html/cells.html">Cells & Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/fadeIn.js"></script>
+  </body>
+</html>

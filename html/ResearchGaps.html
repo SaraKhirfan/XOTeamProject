@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Enable a new era of human space exploration! NASA has been performing biology experiments in space for decades, generating a tremendous amount of information that will need to be considered as humans prepare to revisit the Moon and explore Mars. Although this knowledge is publicly available, it can be difficult for potential users to find information that pertains to their specific interests. Your challenge is to build a dynamic dashboard that leverages artificial intelligence (AI), knowledge graphs, and/or other tools to summarize a set of NASA bioscience publications and enables users to explore the impacts and results of the experiments these publications describe."
+    />
+    <meta
+      name="keywords"
+      content="NASA, space, exploration, biology, experiments, AI, knowledge graphs, dashboard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hashem,Sara,Rama,Majd" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/ResearchGaps.css" />
+    <link rel="stylesheet" href="../css/fadeIn.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <script defer src="../js/button.js"></script>
+    <title>Research Gaps & Opportunities</title>
+  </head>
+  <body>
+    <button onclick="press()" id="ai" class="ai">AI chat</button>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="Logo" />
+        </div>
+         <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/missions.html">Missions</a></li>
+            <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="../html/3DLevinLab.html">3D LAB</a></li>
+            <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+      </nav>
+      <div class="about-section">
+        <h1 style="font-family:Alegreya SC, sans-serif;" >Research Gaps & Opportunities</h1>
+        <p>What We Still Don’t Know About Space Biology?</p>
+      </div>
+    </div>
+
+
+      <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="../html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+    <div class="information">
+      <div class="left"><img src="../images/space1.png" alt="" /></div>
+      <div class="right">
+        <h1>The Value of Identifying Gaps</h1>
+        <p>
+          The Research Gaps page in LEVIN highlights what we still don’t know
+          about space biology, helping scientists, mission planners, and
+          decision-makers focus on the most critical unanswered questions. By
+          organizing gaps across humans, plants, microbes, cells, and radiation,
+          this page guides future research directions, supports innovation, and
+          connects users directly with NASA studies, turning unknowns into
+          opportunities for discovery and safe exploration of the Moon and Mars.
+        </p>
+      </div>
+    </div>
+    <main>
+        <div class="main-container">
+
+    <div class="chart-section fade-in">
+        <p>and innovation for life beyond Earth.</p>
+
+        <div class="bubble-chart-area">
+            
+           <a href="#88">
+
+             <div class="bubble radiation-bubble">
+                <div class="tooltip">
+                    <h3>Space Radiation</h3>
+                    <p>Major health concern</p>
+                    <p>8 studies ongoing</p>
+                </div>
+            </div>
+           </a>
+            
+           <a href="#11">
+             <div class="bubble plant-bubble-1">
+                <div class="tooltip">
+                    <h3>Plant Biology</h3>
+                    <p>Food & O2 production</p>
+                    <p>5 studies ongoing</p>
+                </div>
+            </div>
+           </a>
+            
+            <div class="bubble cells-bubble">
+                <div class="tooltip">
+                    <h3>Cellular Studies</h3>
+                    <p>Effects of microgravity</p>
+                    <p>4 studies ongoing</p>
+                </div>
+            </div>
+            
+            <a href="#11">
+<div class="bubble plant-bubble-2">
+                 <div class="tooltip">
+                    <h3>Plant Biology</h3>
+                    <p>Food & O2 production</p>
+                    <p>5 studies ongoing</p>
+                </div>
+            </div>
+
+            </a>
+            
+            <div class="bubble microbes-bubble">
+                <div class="tooltip">
+                    <h3>Microbial Behavior</h3>
+                    <p>Planetary protection risk</p>
+                    <p>2 studies ongoing</p>
+                </div>
+            </div>
+            
+            <div class="bubble purple-bubble">
+                <div class="tooltip">
+                    <h3>Uncategorized</h3>
+                    <p>General research</p>
+                    <p>1 study ongoing</p>
+                </div>
+            </div>
+            
+            <a href="#33">
+
+              <div class="bubble human-bubble">
+                <div class="tooltip">
+                    <h3>Immune System</h3>
+                    <p>Unresolved risk for Mars</p>
+                    <p>3 studies ongoing</p>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <ul class="legend">
+            <li class="legend-item"><span class="legend-color" style="background-color: #4a69bd;"></span>Human</li>
+            <li class="legend-item"><span class="legend-color" style="background-color: #6ab090;"></span>Plant</li>
+            <li class="legend-item"><span class="legend-color" style="background-color: #e09f6b;"></span>Microbes</li>
+            <li class="legend-item"><span class="legend-color" style="background-color: #f0c38e;"></span>Cells</li>
+            <li class="legend-item"><span class="legend-color" style="background-color: #d395aa;"></span>Radiation</li>
+        </ul>
+    </div>
+
+    <div class="content-section fade-in">
+        <h2 style="border-bottom: 10px solid #4a69bd;" >HUMAN</h2>
+        <p>
+Studying humans in space highlights many research gaps that remain critical for future exploration. Despite decades of missions, we still lack full understanding of how long-term exposure to microgravity and radiation affects the human body, especially the immune system, cardiovascular health, and bone density. These gaps pose risks for astronauts on missions to Mars or extended stays on the Moon. Identifying such unknowns allows researchers and mission planners to develop countermeasures, create safer environments, and ensure sustainable human presence beyond Earth.        </p>
+    </div>
+    <div style="width: 100%; height: 50px; background-color: white; margin-top: 10px; margin-bottom: 10px;"></div>
+    <div id="11" class="content-section">
+        <h2 style="border-bottom: 10px solid #6ab090;" >PLANT</h2>
+        <p>
+Plants are essential for long-term human space missions, providing food, oxygen, and psychological benefits. However, significant research gaps exist in understanding how microgravity, radiation, and limited resources affect plant growth, reproduction, and nutrient content. Scientists are still exploring optimal conditions for cultivating plants on the Moon or Mars, including soil substitutes, water recycling, and light cycles. Addressing these gaps is crucial for developing sustainable life-support systems, ensuring reliable food production, and supporting crew health during extended space exploration missions.        </p>
+    </div>
+    <div style="width: 100%; height: 50px; background-color: white; margin-top: 10px; margin-bottom: 10px;"></div>
+    <div class="content-section fade-in">
+        <h2 style="border-bottom: 10px solid #e09f6b;" >MICROBES</h2>
+        <p>
+Microorganisms play a vital role in both human health and spacecraft safety, yet many gaps remain in understanding their behavior in space. In microgravity, microbes can change how they grow, spread, and resist antibiotics, which may increase risks of infection for astronauts. They also pose challenges for planetary protection, as certain microbes might survive harsh space environments and contaminate other worlds. By identifying these gaps, researchers can design better monitoring systems, develop stronger countermeasures, and ensure both astronaut health and the integrity of future missions to the Moon and Mars        </p>
+    </div>
+    <div style="width: 100%; height: 50px; background-color: white; margin-top: 10px; margin-bottom: 10px;"></div>
+    <div class="content-section fade-in ">
+        <h2 style="border-bottom: 10px solid #f0c38e;" >CELLS</h2>
+        <p>
+Cells are the fundamental units of life, and understanding how they respond to space conditions is crucial. Major gaps remain in knowing how microgravity and space radiation affect cell growth, division, signaling, and genetic stability. These changes can influence the health of tissues, organs, and whole organisms, including humans, plants, and microbes. By studying these cellular responses, scientists can develop strategies to mitigate harmful effects, improve regenerative medicine approaches, and ensure safer long-term missions to the Moon, Mars, and beyond.        </p>
+    </div>
+    <div style="width: 100%; height: 50px; background-color: white; margin-top: 10px; margin-bottom: 10px;"></div>
+    <div id="88" class="content-section  fade-in " style="margin-bottom: 30px;" >
+        <h2 style="border-bottom: 10px solid #d395aa;" >RADIATION</h2>
+        <p>
+Radiation in space is one of the most significant risks to human health and biological systems. Research gaps remain in understanding how cosmic rays and solar particle events affect DNA, cells, and organs over long-duration missions. High-energy radiation can increase the risk of cancer, cardiovascular issues, and immune system dysfunction. Studying these effects is crucial for developing effective shielding, protective measures, and medical countermeasures to ensure the safety and wellbeing of astronauts during missions to the Moon, Mars, and deep space exploration.        </p>
+    </div>
+    
+</div>
+    </main>
+  <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+       A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/missions.html">Missions</a></li>
+          <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+        <ul>
+          <li><a href="../html/human.html">Humans in Space</a></li>
+          <li><a href="../html/plantsFood.html">Plants in Space</a></li>
+          <li><a href="../html/microbes.html">Microbes in Space</a></li>
+          <li><a href="../html/radiation.html">Radiation Biology</a></li>
+          <li><a href="../html/cells.html">Cells & Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+    <script src="../js/fadeIn.js"></script>
+  </body>
+</html>

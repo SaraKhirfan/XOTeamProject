@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-style: normal;
+
+}
+body {
+
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/back5\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+ 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    width: 100%;
+  
+}
+
+.logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a,
+.nav-links span {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s;
+    z-index: 2;
+}
+.about-section{
+    color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 100px;
+}
+.about-section h1{
+    width: 50%;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+.about-section p{
+    font-size: 30px;
+    width: 60%;
+    line-height: 1.5;}
+    .about-section img{
+        width: 300px;
+        margin-top: 30px;
+        background-color: #13101C;
+        border-radius: 40px;
+        padding: 10px;
+    }
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding: 100px;
+    width: 100%;
+    gap: 60px;
+    height: auto;
+    background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+
+}
+.information .left {
+    width: 50%;
+}
+.information .left img {
+width: 500px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.information .right h1{
+    font-size:60px;
+    margin-bottom: 30px;
+}
+.information .right p{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+     background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+
+}
+  .main-container {
+        width: 70%;
+       margin-left: auto;
+       margin-right: auto;
+     
+     
+ height: auto;
+        overflow: hidden;
+    }
+
+    /* Top Section with Chart */
+    .chart-section {
+       background-color: white;
+        padding: 25px 35px;
+        border-bottom: 2px solid #3a416a;
+    }
+    
+    .chart-section > p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .bubble-chart-area {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Bubble Styling */
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .bubble:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Specific Bubble Positions and Sizes */
+    .human-bubble { background-color: #4a69bd; width: 100px; height: 100px; top: 40%; right: 15%; }
+    .plant-bubble-1 { background-color: #6ab090; width: 70px; height: 70px; top: 10%; left: 25%; }
+    .plant-bubble-2 { background-color: #80c7a3; width: 90px; height: 90px; top: 45%; left: 30%; }
+    .microbes-bubble { background-color: #e09f6b; width: 80px; height: 80px; top: 30%; left: 55%; }
+    .cells-bubble { background-color: #f0c38e; width: 50px; height: 50px; top: 70%; left: 18%; }
+    .radiation-bubble { background-color: #d395aa; width: 60px; height: 60px; top: 20%; left: 10%; }
+    .purple-bubble { background-color: #9d79c7; width: 45px; height: 45px; top: 65%; right: 35%; }
+    
+
+    /* Tooltip Styling */
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        background-color: #1f283e;
+        color: #fff;
+        text-align: left;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        width: 200px;
+        bottom: 115%; /* Position reliably above the bubble */
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 10;
+        border: 1px solid #555;
+    }
+    
+    .tooltip::after { /* Arrow pointing down */
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: #1f283e transparent transparent transparent;
+    }
+
+    .bubble:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .tooltip h3 {
+        margin: 0 0 5px 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tooltip p {
+        margin: 0 0 4px 0;
+        font-size: 0.9rem;
+        color: #b0b0b0;
+    }
+    
+    /* Legend Styling */
+    .legend {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .legend-item {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+    .legend-color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 8px; /* Switched for LTR text */
+    }
+
+    /* Content Section Styling */
+    .content-section {
+        margin-top: 10px;
+        background-color: white;
+        padding: 35px;
+    }
+    .content-section h2 {
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-bottom: 5px solid #4a69bd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .content-section p {
+        font-size: 20px;
+        color: black;
+        line-height: 1.8;
+     
+    }
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  
+    background-image: url('../images/back.png');
+    background-size: cover;
+    /* لضمان تغطية الصورة كامل المساحة */
+    background-position: center;
+    /* لتركيز الصورة في المنتصف */
+    color: #ffffff;
+    /* لون النص في الفوتر */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* للسماح للعناصر بالنزول لسطر جديد على الشاشات الصغيرة */
+    justify-content: space-around;
+    /* توزيع العناصر بالتساوي */
+    align-items: flex-start;
+    /* محاذاة العناصر للأعلى */
+    gap: 30px;
+    /* مسافة بين الأعمدة */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* خط فاصل خفيف */
+    box-sizing: border-box;
+   
+}
+footer .footer-section p{
+    font-size: 20px;
+}
+.footer-section {
+    flex: 1;
+    /* لجعل الأعمدة تتوزع بالتساوي */
+    min-width: 200px;
+    /* أقل عرض ممكن للعمود قبل ما ينزل لسطر جديد */
+    margin: 0 15px;
+    /* مسافة جانبية بين الأقسام */
+}
+
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 300px;
+    /* حجم اللوجو */
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    /* عشان اللوجو الأسود يصير أبيض */
+}
+
+.footer-logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.footer-logo-text p {
+    margin: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* خط تحت العنوان */
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.iframe-section {
+    position: fixed;
+    display: none;
+    top: 100px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    z-index: 1000;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .iframe-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

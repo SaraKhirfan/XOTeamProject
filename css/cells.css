@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya  SC", sans-serif;
+    font-style: normal;
+
+}
+body {
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/atom.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index:1;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    width: 100%;
+
+}
+
+.logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+
+.title{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title h1{
+    font-size: 70px;
+
+}
+.title h2{
+    font-size: 50px;
+}
+.cell-content{
+    background-image: url('../images/image.png');
+    box-shadow:20px -15px 40px 70px #13101c;
+    padding:70px 10px;
+    background-color: #13101c;
+    position:relative;
+    z-index: 1;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.card{
+    background-color: white;
+    padding:3px 30px;
+    border: #fdd500 solid 5px;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s 0s ease-in;
+    
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card a{
+    text-decoration: none;
+    color:black;
+}
+
+.radiationInfoBox{
+    background-color: white;
+    padding:50px 30px;
+    margin:10px 40px;
+    border-radius: 20px;
+    
+
+}
+
+.cardModel{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px #ffaa184d;
+    margin-bottom: 5px;
+}
+
+
+model-viewer{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px #ffaa184d;
+    margin-bottom: 5px;
+    float: right;
+ 
+}
+
+
+
+
+.section{
+    margin-bottom: 20px;
+}
+
+.radiationInfoBox ul{
+    margin-left:15px;
+    list-style: circle;
+}
+
+.example1{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.example1 img{
+    width:clamp(200px,60%,900px);
+    border-radius: 20px;
+}
+
+.bulletPoints{
+    background-image: url(../images/image.png);
+    padding:40px 10px;
+    background-color: #13101c;
+}
+.infoContainer{
+    margin: 5% 0;
+}
+.subheader{
+    font-size:50px;
+    color: white;
+    margin:0px 20px;
+    font-weight: bold;
+}
+.infoBox{
+    background-color: white;
+    padding:40px;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap:10px;
+}
+.infoBox p {
+    font-size: 25px;
+}
+.viewerModel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.comment{
+    font-weight: 500;
+    font-size: small;
+}
+
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.footer {
+  
+    background-image: url('../images/back.png');
+    background-size: cover;
+    /* لضمان تغطية الصورة كامل المساحة */
+    background-position: center;
+    /* لتركيز الصورة في المنتصف */
+    color: #ffffff;
+    /* لون النص في الفوتر */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* للسماح للعناصر بالنزول لسطر جديد على الشاشات الصغيرة */
+    justify-content: space-around;
+    /* توزيع العناصر بالتساوي */
+    align-items: flex-start;
+    /* محاذاة العناصر للأعلى */
+    gap: 30px;
+    /* مسافة بين الأعمدة */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* خط فاصل خفيف */
+    box-sizing: border-box;
+   
+}
+footer .footer-section p{
+    font-size: 20px;
+}
+.footer-section {
+    flex: 1;
+    /* لجعل الأعمدة تتوزع بالتساوي */
+    min-width: 200px;
+    /* أقل عرض ممكن للعمود قبل ما ينزل لسطر جديد */
+    margin: 0 15px;
+    /* مسافة جانبية بين الأقسام */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 300px;
+    /* حجم اللوجو */
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    /* عشان اللوجو الأسود يصير أبيض */
+}
+
+.footer-logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.footer-logo-text p {
+    margin: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* خط تحت العنوان */
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.iframe-section {
+    position: fixed;
+    display: none;
+    top: 100px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    z-index: 1000;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .iframe-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

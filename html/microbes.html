@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/microbes.css" />
+    <title>Microbes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.5/themes/odometer-theme-default.css" integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/button.css">
+    <script src="../js/microbes.js" defer></script>
+    <script defer src="../js/button.js"></script>
+</head>
+<body>
+    <button onclick="press()" id="ai" class="ai">AI chat</button>
+    <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="../images/logo.png" alt="Logo" />
+          </div>
+           <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/missions.html">Missions</a></li>
+            <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="../html/3DLevinLab.html">3D LAB</a></li>
+            <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="title">
+            <h1 style="font-family:Alegreya SC, sans-serif;" >MICROBES</h1>
+            <h2>In Space</h2>
+        </div>
+
+    </div>
+
+    
+      <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="../html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+
+    <div class="micro-content">
+        <div class="cards">
+            <div class="card"><a href="#1">Why Microbes Matter In Space</a></div>
+            <div class="card"><a href="#2">Microbial Behavior In microgravity</a></div>
+            <div class="card"><a href="#3">The Spacecraft Microbiome</a></div>
+            <div class="card"><a href="#4">Impact On Astronount Health</a></div>
+            <div class="card"><a href="#5">Impact On Space Agriculture</a></div>
+            <div class="card"><a href="#6">Extremphiles& Life Detection</a></div>
+            <div class="card"><a href="#7">Future Applications</a></div>
+        </div>
+
+        <div class="data">
+            <h1>Data Overview</h1>
+            <p>Microbes are everywhere on Earth, and they travel with us into space. On the International Space Station, scientists study how microbial communities change in microgravity, how they interact with astronauts and spacecraft systems, and what this means for future missions. The charts below provide a snapshot of microbial composition, behavior in space compared to Earth, and key facts from NASA’s research.</p>
+        </div>
+
+        <div class="charts">
+            <div class="chart">
+                <div class="pieChart">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="barChart">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-info">
+                    <div class="info">
+                        <div><span class="number50 odometer">50</span><span class="over">+</span></div>
+                        <div class="text">king of microbes tracked regularly on the iss, including bacteria, fungi, and archaea.
+                           <br> <a href="https://www.nasa.gov/missions/station/iss-research/monitoring-microorganisms/?utm_source=chatgpt.com">NASA-ISS MICROBIAL MONITORING</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span class="number20 odometer">20</span>
+                        <div class="text">years of continuous microbial monitoring abroad the iss, helping track changes in microbial populations and Astronaut safety.
+                            <br><a href="https://ntrs.nasa.gov/api/citations/20220008788/downloads/Redefining%20Microbiological%20Risk%20Mitigation%20during%20Spaceflight.pdf?utm_source=chatgpt.com">NASA-Longterm Microbial Monitoring</a> </div>
+                    </div>
+                    <div class="info">
+                        <div><span class="number18 odometer">18</span><span class="over">+</span></div>
+                        <div class="text">months, some microbes survive on the exterior of the iss, enduring vacuum, radiation, and extreme temperatures
+                           <br> <a href="https://www.nasa.gov/missions/station/iss-research/monitoring-microorganisms/?utm_source=chatgpt.com">NASA-exterior microbes</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<div class="bulletPoints">
+
+        <div id="1" class="infoContainer">
+            <div class="subheader" >Why microbes matter in space?</div>
+            <div class="infoBox">
+                Microbes are critical in space because they influence astronaut health, spacecraft integrity, and environmental balance. On the ISS and other vehicles, microbial communities on surfaces are tracked over time to monitor how they evolve and potentially become harmful. Projects like Space Biofilms study how bacteria and fungi form resilient biofilms in microgravity, which could damage equipment or resist cleaning NASA Science. Understanding these behaviors helps protect crew health and maintain safe habitats.
+            </div>
+        </div>
+
+        <div id="2"class="infoContainer">
+            <div class="subheader" >Microbial behavior in micro-gravity</div>
+            <div class="infoBox">
+                Microbes in microgravity often behave very differently compared to Earth: they tend to reach a higher final cell count, form enhanced biofilms, show increased virulence, and sometimes display altered gene expression patterns.In space, low fluid shear, microgravity and stress also shape how bacteria adapts on spacecraft surfaces and in fluids. These changes can increase risks of infection and biofouling, making it critical to study microbial dynamics under weightless conditions.
+            </div>
+        </div>
+
+        <div id="3"class="infoContainer">
+            <div class="subheader" >Spacecraft microbiome</div>
+            <div class="infoBox">
+                Spacecraft environments harbor dynamic microbial ecosystems shaped by crew, cargo, and habitat surfaces. In missions such as Microbial Tracking-1B, airborne and surface microbes aboard spacecraft are profiled to determine how they colonize closed systems and evolve over time. NASA Science The Microbial Tracking-2 / ISS-MOP initiative extends this, revealing that many microbial species on ISS surfaces are human‐skin associated (e.g. Staphylococcus, Archaea), exhibiting temporal variation yet spatial uniformity across different locations.
+               <span><a href="../models/ArchaeaModel/index.html">SEE ARCHAEA UP CLOSE!</a></span>
+            </div>
+        </div>
+
+        <div id="4"class="infoContainer">
+            <div class="subheader" >Impact on astronaut health</div>
+            <div class="infoBox">
+                Microbes aboard spacecraft can alter virulence and evade immune defenses under spaceflight conditions, increasing risks of infection in astronauts whose immune systems are compromised in microgravity. (NASA Risk of Host-Microorganism Interactions Long-duration confinement experiments (e.g. Mars500) reveal that astronauts’ gut microbiomes lose beneficial bacteria involved in nutrient absorption and inflammation regulation, which could affect metabolism, immunity, and overall health. (NASA OSDR / GeneLab microbiome news)
+            </div>
+        </div>
+
+        <div id="5"class="infoContainer">
+            <div class="subheader" >Impact on space agriculture</div>
+            <div class="infoBox">
+                NASA's Biological and Physical Sciences (BPS) division is actively pursuing the goal of Space Crops to support human spaceflight. The critical impact of microorganisms on growing food in space is addressed through research like the Microbiological and Nutritional Analysis of Lettuce Crops. Documented in the NASA Space Life Sciences Library (NSLSL), this type of investigation is vital for ensuring the safety and successful cultivation of fresh food within space environments, linking microbial presence directly to the health and sustainability of space agriculture.
+            </div>
+        </div>
+
+        <div id="6"class="infoContainer">
+            <div class="subheader" >Extremophiles and life detection</div>
+            <div class="infoBox">
+                NASA’s space life sciences efforts are essential for advancing The Search for Life in the Universe by exploring the effects of the space environment on biological systems. This research, overseen by the Biological and Physical Sciences (BPS) division, investigates resilient life forms, such as Water Bears (tardigrades), which are super-tiny animals known for their survival characteristics. Such investigations into life’s extremes and capabilities directly contribute to life detection technology, including NASA-funded creation of a DNA-like molecule to aid the search for alien life.
+                <span><a href="../models/WaterBearModel/index.html">SEE WATER BEAR UP CLOSE!</a></span>
+            </div>
+        </div>
+
+        <div  id="7"class="infoContainer">
+            <div class="subheader">Future Applications</div>
+            <div class="infoBox">
+                Studies documented in the NASA Space Life Sciences Library (NSLSL) show that understanding the Microbiological and Nutritional Analysis of Lettuce Crops is essential, suggesting a critical role for microbes in cultivating fresh food as part of the agency's Space Crops goals. Furthermore, investigations into biological systems, such as Protein Crystal Growth Experiments and Mold Experiments on the International Space Station, point toward future applications in space-based biotechnology for developing new and better drugs and advanced materials.
+            </div>
+        </div>
+
+</div>
+
+
+  <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+         A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/missions.html">Missions</a></li>
+          <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+        <ul>
+          <li><a href="../html/human.html">Humans in Space</a></li>
+          <li><a href="../html/plantsFood.html">Plants in Space</a></li>
+          <li><a href="../html/microbes.html">Microbes in Space</a></li>
+          <li><a href="../html/radiation.html">Radiation Biology</a></li>
+          <li><a href="../html/cells.html">Cells & Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+
+
+
+
+    
+
+<!-- code to make the charts responsive and add an odometer very fun :)))))))))))))))))))))))) -->
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+
+<script>
+Chart.register(ChartDataLabels);
+
+// Function to create the chart
+function createPieChart() {
+    const ctx = document.getElementById('myChart');
+    
+    // Destroy existing chart instance if it exists to ensure a fresh animation
+    if (ctx.chart) {
+        ctx.chart.destroy(); 
+    }
+
+    const newChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: [ 'Fungi', 'Archea','Bacteria','Virus','Other' ],
+            datasets: [{
+                label: 'percent',
+                data: [10, 0.3,82,0.06, 7],
+                borderWidth: 1,
+                backgroundColor:[
+                    "rgba(44, 62, 165, 0.8)",
+                    "rgba(76, 58, 191, 0.8)",
+                    "rgba(47, 121, 191, 0.8)",
+                    "rgba(77, 101, 205, 0.8)",
+                    "rgba(32, 2, 210, 0.8)"
+                ]
+            }],
+        },
+        options: {
+            // Remove 'deferred' plugin as we are now using Intersection Observer
+            plugins: {
+                title: {
+                    display: true, 
+                    text: 'ISS Microbiome', 
+                    color: 'grey',
+                    font: {
+                        size: 20,
+                        weight: 'bold'
+                    },
+                    padding: {
+                        top: 10,
+                        bottom: 10
+                    },
+                },
+                datalabels: {
+                    formatter: (value, context) => {
+                        const dataset = context.chart.data.datasets[context.datasetIndex];
+                        // Calculate total sum for percentage
+                        const total = dataset.data.reduce((sum, dataValue) => sum + dataValue, 0);
+                        const percentage = ((value / total) * 100).toFixed(2); 
+                        return percentage + '%';
+                    },
+                    color: '#fff',
+                },
+            },
+            animation:{
+                duration:3000
+            }
+        }
+    });
+
+    // Attach the chart instance to the canvas element for easy access/destruction
+    ctx.chart = newChart;
+}
+
+// 1. Get the chart canvas element
+const chartCanvas = document.getElementById('myChart');
+
+// 2. Set up the Intersection Observer
+const observe = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        // Check if the element has entered the viewport
+        if (entry.isIntersecting) {
+            // 3. Call the chart creation function
+            createPieChart();
+            
+            // 4. Stop observing after the chart has been created once
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    // Observer options: trigger when 10% of the element is visible
+    root: null, // Use the viewport
+    rootMargin: '0px',
+    threshold: 0.1
+});
+
+// 5. Start observing the canvas element
+observe.observe(chartCanvas);
+
+</script>
+
+
+<script>
+    
+Chart.register(ChartDataLabels);
+
+// Function to create the chart
+function createBarChart() {
+  const bar = document.getElementById('barChart');
+  if (bar.chart) {
+    // Destroy existing chart instance if it exists before creating a new one
+    bar.chart.destroy(); 
+  }
+
+  const newChart = new Chart(bar, {
+    type: 'bar',
+    data: {
+      labels: ['Growth',"Biofilm","Antibiotic-Resistance"],
+      datasets: [{
+        label:'In Space',
+        data: [100,100,100],
+        borderWidth: 1,
+        backgroundColor:[
+        "rgba(44, 62, 165, 0.8)"
+        ],
+        barThickness:20
+      },
+      {
+        label:'On Earth',
+        data: [120,18,133],
+        borderWidth: 1,
+        backgroundColor:[
+        "rgba(47, 121, 191, 0.8)",
+        ],
+        barThickness:20
+      },
+        
+    ]},
+    options: {
+        maintainAspectRatio: false,
+      responsive:true,
+      animation:{
+        duration:3000
+      }
+      ,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Microbial Behavior',
+                color: 'grey',
+                font: {
+                    size: 20,
+                    weight: 'bold'
+                },
+                padding: {
+                    top: 10,
+                    bottom: 10
+                },
+                },
+                datalabels:{
+                   color: '#fff'
+                }
+        },
+        scales: {
+        y: {
+          barPercentage: 0.98,
+          categoryPercentage: 100,
+        }
+    }
+        
+    }
+  });
+
+  // Attach the chart instance to the canvas element for easy access
+  bar.chart = newChart;
+}
+
+const bar = document.getElementById('barChart');
+
+// Set up the Intersection Observer
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // Check if the element is visible
+    if (entry.isIntersecting) {
+      // Create the chart when it enters the viewport
+      createBarChart();
+      // Stop observing after the chart has been created once
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  // Options for the observer
+  root: null, // Use the viewport as the root
+  rootMargin: '0px',
+  threshold: 0.2 // Trigger when 10% of the element is visible
+});
+
+// Start observing the canvas element
+observer.observe(bar);
+</script>
+
+
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+      integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+</body>
+</html>

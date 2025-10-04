@@ -1,0 +1,11 @@
+Model Information:
+* title:	Human Cell
+* source:	https://sketchfab.com/3d-models/human-cell-60ef7d2515b0403986ff9e8b7f234a66
+* author:	markdragan (https://sketchfab.com/markdragan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Human Cell" (https://sketchfab.com/3d-models/human-cell-60ef7d2515b0403986ff9e8b7f234a66) by markdragan (https://sketchfab.com/markdragan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

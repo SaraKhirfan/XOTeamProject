@@ -1,0 +1,11 @@
+Model Information:
+* title:	Archaea
+* source:	https://sketchfab.com/3d-models/archaea-eb47b67df9ca4c47b681716d572e3177
+* author:	arloopa (https://sketchfab.com/arloopa)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Archaea" (https://sketchfab.com/3d-models/archaea-eb47b67df9ca4c47b681716d572e3177) by arloopa (https://sketchfab.com/arloopa) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

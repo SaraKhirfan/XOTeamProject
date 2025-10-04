@@ -1,0 +1,11 @@
+Model Information:
+* title:	Water Bear
+* source:	https://sketchfab.com/3d-models/water-bear-6e0ecc9d43ad4cf9a17efab2900f72ee
+* author:	oneillbeck (https://sketchfab.com/oneillbeck)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Water Bear" (https://sketchfab.com/3d-models/water-bear-6e0ecc9d43ad4cf9a17efab2900f72ee) by oneillbeck (https://sketchfab.com/oneillbeck) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

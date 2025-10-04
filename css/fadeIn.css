@@ -1,0 +1,10 @@
+.fade-in {
+  opacity: 0;
+ /* حركة بسيطة من الأسفل */
+  transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+
+}

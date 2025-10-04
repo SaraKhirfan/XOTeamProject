@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/missions.css" />
+    <link rel="stylesheet" href="../css/fadeIn.css">
+    <link rel="stylesheet" href="../css/button.css">
+       <script defer src="../js/button.js"></script>
+    <title>missions</title>
+</head>
+<body>
+  <button onclick="press()" id="ai" class="ai">AI chat</button>
+    <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="../images/logo.png" alt="Logo" />
+          </div>
+            <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/missions.html">Missions</a></li>
+            <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="../html/3DLevinLab.html">3D LAB</a></li>
+            <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+        </nav>
+        
+        <div class="title">
+            <h1>MISSIONS</h1>
+            <h2>AND EXPERIMENTS</h2>
+        </div>
+      </div>
+
+
+          
+      <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="../html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+    
+<div class="mission-content">
+
+      <h1 style="font-family:Alegreya SC, sans-serif;" >Latest Missions And Experiments</h1>
+
+      <div class="cards fade-in">
+          <div class="card">
+            <img src="../images/astroAuraFarming.jpg" alt="astronoaut photo">
+
+            <div class="cardInfo">
+              <div class="desc"><div>Philosophy</div> <div>12 min read</div> </div>
+              <!-- in bold -->
+              <h3 class="cardTitle">The Overview Effect:<br>
+              Transforming Consciousness</h3>
+
+              <p class="cardContent">Former astronaut Dr. Elena Vasquez explores how
+              viewing Earth from space fundamentally alters
+              human perception and values.
+              </p><br>
+
+              <!-- bottom of the card -->
+              <div class="credit">
+                <img src="../images/elena.jpg" alt="elena">
+                <div class="author">
+                  <div class="name">Dr. Elena Vasquez</div>
+                  <div class="position">Former ISS Commander</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../images/mosqueInSpace.jpg" alt="space architecture">
+
+            <div class="cardInfo">
+              <div class="desc"><div>Architecture</div> <div>15 min read</div> </div>
+              <!-- in bold -->
+              <h3 class="cardTitle">Designing for the Void:<br>Space
+              Architecture</h3>
+
+              <p class="cardContent">
+                Renowned architect Hiroshi Nakamura discusses
+                the principles of designing habitable spaces in the
+                most hostile environment known to humanity.
+              </p>
+              
+              <!-- bottom of the card -->
+              <div class="credit">
+                <img src="../images/Hiroshi.jpg" alt="hiroshi">
+                <div class="author">
+                  <div class="name">Hiroshi Nakamura</div>
+                  <div class="position">Space Habitat Architect</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        
+
+          <div class="card">
+            <img src="../images/starWars.jpg" alt="space infastrucuture">
+
+            <div class="cardInfo">
+              <div class="desc"><div>Economics</div> <div>18 min read</div> </div>
+              <!-- in bold -->
+              <h3 class="cardTitle">The Trillion-Dollar Orbital Economy</h3>
+
+              <p class="cardContent">
+                Futurist and economist Dr. Aisha Mbeki examines
+                how space industrialization will reshape global
+                economics and create unprecedented wealth.
+              </p><br>
+
+              <!-- bottom of the card -->
+              <div class="credit">
+                <img src="../images/Aisha.jpg" alt="aisha">
+                <div class="author">
+                  <div class="name">Dr. Aisha Mbeki</div>
+                  <div class="position">Space Economist</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+      </div>
+
+
+
+  <div class="timelineWrap">
+    <h1 class="timelineTitle" style="margin-bottom: 5px;">Experiment Timeline & Outcomes</h1>
+    <div class="comment" style="font-size: 20px;">click on the experiment title for details</div>
+  </div>
+    <div class="timelineContainer fade-in">
+        <ul id="timeline">
+
+          
+          <li class="experiment">
+              <input type="radio" class="radio" id="ex3" name="radio">
+              <div class="relative">
+                <label for="ex3">Rodent Research (RR-12)</label>
+                <span class="date">April 2019</span>
+                <span class="circle"></span>
+              </div>
+              <div class="timelineContent">
+                <p class="outcomes"><strong>Organism</strong>: Arabidopsis thaliana<br><strong>Mission</strong>:Veggie Plant 
+                Growth System<br>
+                <strong>Outcomes</strong>: <br>Examined immune system responses to vaccinations in space; informed astronaut health protocols.
+                <br>
+                <br>
+                DataLink: <a href="https://science.nasa.gov/biological-physical/data/">GeneLab</a>
+                </p>
+              </div>
+          </li>     
+
+          <li class="experiment">
+              <input type="radio" class="radio" id="ex1" name="radio" >
+              <div class="relative">
+                <label for="ex1">BioSentinel</label>
+                <span class="date">Launched: 2022</span>
+                <span class="circle"></span>
+              </div>
+              <div class="timelineContent">
+                <p class="outcomes"><strong>Organism</strong>: Saccharomyces cerevisiae<br><strong>Mission</strong>: Deep-Space Exploration <br>
+                <strong>Outcomes</strong>: <br>Studied DNA damage from deep space radiation; provided insights into radiation effects on living organisms
+                <br>
+                <br>
+                DataLink: <a href="https://science.nasa.gov/biological-physical/data/">GeneLab</a>
+                </p>
+              </div>
+          </li>
+
+         <li class="experiment">
+              <input type="radio" class="radio" id="ex2" name="radio" >
+              <div class="relative">
+                <label for="ex2">veggi-ponds</label>
+                <span class="date">on going</span>
+                <span class="circle"></span>
+              </div>
+              <div class="timelineContent">
+                <p class="outcomes"><strong>Organism</strong>: Arabidopsis thaliana<br><strong>Mission</strong>:Veggie Plant 
+Growth System<br>
+                <strong>Outcomes</strong>: <br>Investigated plant growth in microgravity; contributed to understanding plant biology in space.
+                <br>
+                <br>
+                DataLink: <a href="https://science.nasa.gov/biological-physical/data/">GeneLab</a>
+                </p>
+              </div>
+          </li>
+
+
+
+
+          <li class="experiment">
+              <input type="radio" class="radio" id="ex4" name="radio" >
+              <div class="relative">
+                <label for="ex4">TROPI</label>
+                <span class="date">2010</span>
+                <span class="circle"></span>
+              </div>
+              <div class="timelineContent">
+                <p class="outcomes"><strong>Organism</strong>: Arabidopsis thaliana seedlings<br><strong>Mission</strong>:ISS / STS-130 & Expedition 22 (using the EMCS facility)<br>
+                <strong>Outcomes</strong>: <br>Revealed how red-light and blue-light phototropic responses operate under microgravity; isolated the red-light phototropism pathway without gravitational bias. 
+                <br>
+                <br>
+                DataLink: <a href="https://science.nasa.gov/biological-physical/data/">GeneLab</a>
+                </p>
+              </div>
+          </li>
+
+
+        <li class="experiment">
+              <input type="radio" class="radio" id="ex5" name="radio" >
+              <div class="relative">
+                <label for="ex5">Tanpopo</label>
+                <span class="date">2015-2018</span>
+                <span class="circle"></span>
+              </div>
+              <div class="timelineContent">
+                <p class="outcomes"><strong>Organism</strong>: Microbes, organic compounds, cosmic dust<br><strong>Mission</strong>:ISS / Exposed Facility on JEM (Kibo) <br><strong>Outcomes</strong>: <br>Demonstrated survival / degradation curves of microbes & organics in real space vacuum/UV; captured interplanetary dust & micrometeoroids, tested aerogel dust capture; provided data relevant to panspermia hypotheses.<br>
+                <br>
+                DataLink: <a href="https://science.nasa.gov/biological-physical/data/">GeneLab</a>
+                </p>
+              </div>
+          </li>
+
+
+
+    
+
+        </ul>
+
+
+
+    </div>
+
+
+</div>
+ 
+
+
+    <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+        A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/missions.html">Missions</a></li>
+          <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+        <ul>
+          <li><a href="../html/human.html">Humans in Space</a></li>
+          <li><a href="../html/plantsFood.html">Plants in Space</a></li>
+          <li><a href="../html/microbes.html">Microbes in Space</a></li>
+          <li><a href="../html/radiation.html">Radiation Biology</a></li>
+          <li><a href="../html/cells.html">Cells & Genetics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+<script src="../js/fadeIn.js"></script>
+</body>
+</html>

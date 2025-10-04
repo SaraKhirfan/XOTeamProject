@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Enable a new era of human space exploration! NASA has been performing biology experiments in space for decades, generating a tremendous amount of information that will need to be considered as humans prepare to revisit the Moon and explore Mars. Although this knowledge is publicly available, it can be difficult for potential users to find information that pertains to their specific interests. Your challenge is to build a dynamic dashboard that leverages artificial intelligence (AI), knowledge graphs, and/or other tools to summarize a set of NASA bioscience publications and enables users to explore the impacts and results of the experiments these publications describe."
+    />
+    <meta
+      name="keywords"
+      content="NASA, space, exploration, biology, experiments, AI, knowledge graphs, dashboard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hashem,Sara,Rama,Majd" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/ResearchExplorer.css" />
+    <link rel="stylesheet" href="../css/fadeIn.css">
+    <link rel="stylesheet" href="../css/button.css">
+       <script defer src="../js/button.js"></script>
+    <title>Research Explorer</title>
+  </head>
+  <body>
+    <button onclick="press()" id="ai" class="ai">AI chat</button>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="dashboard.html">Explore Data</a></li>
+          <li><a href="contact.html">Missions</a></li>
+          <li><a href="contact.html">Research Gaps</a></li>
+          <li><a href="contact.html">Glossary</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="about-section">
+        <h1 style="font-family:Alegreya SC, sans-serif;" >Research Explorer</h1>
+        <p>
+          platform that centralizes and organizes scientific research for easy
+          exploration and access.
+        </p>
+        <div
+          style="
+            background-color: transparent;
+            padding: 20px;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              flex-wrap: wrap;
+            "
+          >
+            <button
+              style="
+                background-color: #9358b6;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+              "
+            >
+              All
+            </button>
+
+            <div
+              style="
+                display: flex;
+                gap: 15px; /* المسافة بين الحروف */
+                color: white; /* لون الحروف */
+                font-size: 30px; /* حجم الحروف */
+                font-weight: 500;
+                cursor: pointer;
+              "
+            >
+              <span>A</span>
+              <span>B</span>
+              <span>C</span>
+              <span>D</span>
+              <span>E</span>
+              <span>F</span>
+              <span>G</span>
+              <span>H</span>
+              <span>I</span>
+              <span>J</span>
+              <span>K</span>
+              <span>L</span>
+              <span>M</span>
+              <span>N</span>
+              <span>O</span>
+              <span>P</span>
+              <span>Q</span>
+              <span>R</span>
+              <span>S</span>
+              <span>T</span>
+              <span>U</span>
+              <span>V</span>
+              <span>W</span>
+              <span>X</span>
+              <span>Y</span>
+              <span>Z</span>
+            </div>
+            <div
+              style="
+                width: 60%;
+                max-width: 600px;
+                margin: 0 auto;
+                background: #e0c868; /* تدرج لوني ذهبي */
+                opacity: 0.7;
+                border-radius: 40px;
+                padding: 10px 30px; /* تم تقليل الـ padding ليناسب الـ input */
+                display: flex;
+                align-items: center;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+              "
+            >
+              <span style="font-size: 20px; color: #4e3f16; margin-right: 10px"
+                >&#128269;</span
+              >
+
+              <input
+                type="text"
+                placeholder="Discover Space Biology Terms"
+                style="
+                  flex-grow: 1; /* للسماح للـ input بملء المساحة المتبقية */
+                  border: none;
+                  background-color: transparent; /* خلفية شفافة لدمجه مع الشريط الذهبي */
+                  color: #4e3f16; /* لون نص الكتابة */
+                  font-size: 18px;
+                  font-weight: bold;
+                  padding: 5px 0; /* padding رأسي بسيط داخل الـ input */
+                  outline: none; /* إزالة الحدود عند التركيز */
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+      <div class="iframe-section">
+      <!-- زر الإغلاق (X) -->
+      <span
+        id="closeIframeBtn"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 22px;
+          font-weight: bold;
+          color: red;
+          cursor: pointer;
+          z-index: 1000;
+        "
+      >
+        ✖
+      </span>
+
+      <iframe src="../html/chatbot.html" frameborder="0"> </iframe>
+    </div>
+
+    
+    <div class="popular">
+      <h1>Popular publications</h1>
+      <div class="cards fade-in ">
+        <div class="card ">
+          <h2>1-Systematic biomedical research of the NASA</h2>
+          <p>
+            The NASA Twins Study is a very high-profile project: it followed one
+            astronaut twin in space vs the other on Earth, across pre-, during,
+            and post-flight time points. PubMed It helps identify biological
+            risks of long space missions, including effects of microgravity,
+            radiation, immune changes, gene expression, etc. PubMed
+          </p>
+        </div>
+        <div class="card ">
+          <h2>2-Incidence Rate of Cardiovascular Disease End Points</h2>
+          <p>
+            Lorem Ipsum has been the industry's standardh desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.
+            Software like Aldus PageMaker.
+          </p>
+        </div>
+        <div class="card ">
+          <h2>
+            3-SARS-CoV-2 Pandemic Impacts on NASA Ground Operations to Protect
+            ISS Astronauts
+          </h2>
+          <p>
+            This is about how NASA adapted protocols in the COVID-19 pandemic to
+            safeguard astronauts (pre-launch quarantine, immunological
+            monitoring, etc.). PubMed It’s relevant because it connects
+            spaceflight health with global public health challenges, especially
+            as astronaut health is always under tight constraints
+          </p>
+        </div>
+        <div class="card ">
+          <h2>
+            4-he NASA Performance Assessment Workstation: cognitive performance
+            during head-down bed rest
+          </h2>
+          <p></p>
+          Head-down bed rest is used to simulate effects of microgravity on the
+          human body. This study examines how cognitive performance changes
+          under those conditions. PubMed Useful for understanding what effects
+          space travel might have on cognition, attention, memory, etc., and how
+          to plan countermeasures
+        </div>
+      </div>
+    </div>
+    <div class="terms">
+      <h1>publications</h1>
+      <div class="terms-cards">
+        <div class="col1">
+          <div class="part1">
+            <h2>A</h2>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4095884/
+"
+                >Absence of gamma</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3040128/
+"
+                >AtRabD2b and AtRabD2c have overlapping.
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11166946/
+"
+                >Aging and putative frailty biomarkers
+              </a>
+            </p>
+          </div>
+          <div class="part2">
+            <h2>B</h2>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3868799/
+"
+                >Bone marrow leptin signaling</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11167097/
+"
+                >Biological horizons: pioneering open science</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6615562/
+"
+                >Bone remodeling is regulated</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6339989/
+"
+                >Back pain in space</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col2">
+          <h2>C</h2>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8441986/
+"
+              >Circulating miRNA spaceflight signature reveals</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10789781/
+"
+              >Chromosomal positioning and epigenetic architecture influence
+              DNA</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7503278/
+"
+              >Cell type-specific imaging of calcium signaling</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593973/
+"
+              >Chimeras reveal a single lipid-interface residue that controls
+              MscL</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955502/
+"
+              >Cytoskeleton structure and total methylation of mouse</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955502/
+"
+              >Cytoskeleton structure and total methylation of mouse</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6062551/
+"
+              >Cardiovascular progenitor cells cultured</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5761896/
+"
+              >Characterization of the naive murine antibody repertoire</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <footer class="footer">
+      <div class="footer-section footer-logo-section">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="VISHNIAC Logo" />
+          <div class="footer-logo-text"></div>
+        </div>
+        <p class="footer-description">
+          A platform that connects and organizes knowledge in space biology, inspired by Gilbert V. Levin, the principal investigator of the Viking mission’s Labeled Release experiment, which provided groundbreaking insights into the search for life on Mars. His legacy continues to inspire new generations in exploring biology beyond Earth.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/missions.html">Missions</a></li>
+          <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+          <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore Data</h3>
+         <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/missions.html">Missions</a></li>
+            <li><a href="../html/ResearchGaps.html">Research Gaps</a></li>
+            <li><a href="../html/3DLevinLab.html">3D LAB</a></li>
+            <li><a href="../html/ResearchExplorer.html">Research Explorer</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 LEVIN. All rights reserved.
+      </div>
+    </footer>
+    
+    <script src="../js/ResearchExplorer.js" ></script>
+    <script src="../js/fadeIn.js"></script>
+  </body>
+</html>

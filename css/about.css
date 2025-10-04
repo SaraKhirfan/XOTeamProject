@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya  SC", sans-serif;
+    font-style: normal;
+
+}
+body {
+
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/back1.jpg');
+    background-size: cover;
+    background-position: center;
+ 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    width: 100%;
+  
+}
+
+.logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a,
+.nav-links span {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+
+
+
+.about-section{
+    color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 100px;
+}
+.about-section h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.about-section p{
+    font-size: 30px;
+    width: 60%;
+    line-height: 1.5;}
+    .about-section img{
+        width: 300px;
+        margin-top: 30px;
+        background-color: #13101C;
+        border-radius: 40px;
+        padding: 10px;
+    }
+.vishniac{
+    display: flex;
+    flex-direction: column;
+   
+    padding: 50px;
+     background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+ 
+}
+.vishniac h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.vishniac p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+.vishniac img{
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;}
+
+.ourTeam{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+     background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+ 
+ 
+}
+.ourTeam h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+color: white;
+    text-align: left;
+}
+.ourTeam p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+.ourTeam .cards{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ourTeam .cards .card{
+  background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+}
+.ourTeam .cards .card img{
+    width: 60%;
+  
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.ourTeam .cards .card h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+.ourTeam .cards .card p{
+    font-size: 15px;
+    color: black;
+   ;text-align: center;
+}
+ .content-box {
+    
+      background: #1a1a2e;
+      color: white;
+    
+      padding: 25px 35px;
+      width: 90%;
+      margin-left: auto;
+        margin-right: auto;
+      line-height: 1.6;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    .content-box h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .content-box ol {
+      padding-left: 20px;
+    }
+
+    .content-box li {
+      margin-bottom: 15px;
+      font-size: 25px;
+    }
+
+    .content-box a {
+      color: #64c1ff;
+      text-decoration: none;
+    }
+
+    .content-box a:hover {
+      text-decoration: underline;
+    }
+    .r{
+        padding: 50px;
+         background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center;
+    }
+.footer {
+  
+    background-image: url('../images/back.png');
+    background-size: cover;
+    /* لضمان تغطية الصورة كامل المساحة */
+    background-position: center;
+    /* لتركيز الصورة في المنتصف */
+    color: #ffffff;
+    /* لون النص في الفوتر */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* للسماح للعناصر بالنزول لسطر جديد على الشاشات الصغيرة */
+    justify-content: space-around;
+    /* توزيع العناصر بالتساوي */
+    align-items: flex-start;
+    /* محاذاة العناصر للأعلى */
+    gap: 30px;
+    /* مسافة بين الأعمدة */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* خط فاصل خفيف */
+    box-sizing: border-box;
+   
+}
+footer .footer-section p{
+    font-size: 20px;
+}
+.footer-section {
+    flex: 1;
+    /* لجعل الأعمدة تتوزع بالتساوي */
+    min-width: 200px;
+    /* أقل عرض ممكن للعمود قبل ما ينزل لسطر جديد */
+    margin: 0 15px;
+    /* مسافة جانبية بين الأقسام */
+}
+
+.footer-logo-section {
+
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 300px;
+    /* حجم اللوجو */
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    /* عشان اللوجو الأسود يصير أبيض */
+}
+
+.footer-logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.footer-logo-text p {
+    margin: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* خط تحت العنوان */
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
