@@ -26,12 +26,6 @@ PDF Presentation:
 
 ---
 
-## 📦 **Project Repository**
-
-GitHub: [https://github.com/SaraKhirfan/XOTeamProject.git](https://github.com/SaraKhirfan/XOTeamProject.git)
-
----
-
 ## 🧬 **Project Details**
 
 LEVIN is a **Space Biology Knowledge Engine** designed to address one problem:
@@ -195,4 +189,5 @@ The project uses openly available scientific resources, including:
 NASA needs a dynamic tool that summarizes bioscience publications using AI, knowledge graphs, and visualization techniques—allowing stakeholders to explore experimental impacts and scientific results related to human spaceflight.
 
 LEVIN directly fulfills this challenge by creating a centralized, intelligent, and interactive research engine.
+
 
