@@ -19,13 +19,6 @@ The solution blends **AI-driven analysis**, **visual dashboards**, **3D models**
 
 ---
 
-## 🎥 **Project Demonstration**
-
-PDF Presentation:
-[https://www.dropbox.com/scl/fi/0yjjmnimgd7fv3vv82plj/LEVINPresentationXOTeam.pdf?rlkey=pfg6l7p92704dj033pl22r99x&st=c723aun5&dl=0](https://www.dropbox.com/scl/fi/0yjjmnimgd7fv3vv82plj/LEVINPresentationXOTeam.pdf?rlkey=pfg6l7p92704dj033pl22r99x&st=c723aun5&dl=0)
-
----
-
 ## 🧬 **Project Details**
 
 LEVIN is a **Space Biology Knowledge Engine** designed to address one problem:
@@ -189,5 +182,6 @@ The project uses openly available scientific resources, including:
 NASA needs a dynamic tool that summarizes bioscience publications using AI, knowledge graphs, and visualization techniques—allowing stakeholders to explore experimental impacts and scientific results related to human spaceflight.
 
 LEVIN directly fulfills this challenge by creating a centralized, intelligent, and interactive research engine.
+
 
 
